@@ -1,0 +1,17 @@
+* { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: Arial, sans-serif; line-height:1.4; background:#f9f9f9; }
+    .banner { background-image: url('banner.jpeg'); background-size: cover;background-position: center; color: white; padding: 120px; text-align:right; font-size:1.4em; font-weight: 300; }
+    .product-section { padding:25px; }
+    .products-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(225px,1fr)); gap:20px; }
+    .product { border:1px solid #ddd; padding:10px; border-radius:8px; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .product img { width:110%; height:160px; object-fit:cover; border-radius:6px; }
+    .title { font-weight:bold; margin:8px 0 4px; }
+    .price { font-weight:bold; color:#0a0a0a; }
+    button { background:#0a0a0a; color:#fff; border:none; padding:8px 12px; border-radius:4px; cursor:pointer; margin-top:8px; }
+    button:hover { background:#0c0c0c; }
+    .modal, #order-form { display: none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#fff; padding:20px; border-radius:6px; z-index:1000; width:90%; max-width:400px; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
+    .modal.active, #order-form.active { display:block; }
+    .overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:999; display:none; }
+    .overlay.active { display:block; }
+    footer { background:#222; color:#fff; padding:20px; text-align:center; margin-top:20px; }
+    footer a { color:#0dcaf0; text-decoration:none; }
